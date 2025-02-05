@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Border Radius Previewer</h1>
+    </header>
+
+    <main class="container">
+        <div class="preview-box" id="preview"></div>
+
+        <div class="controls">
+            <label>Top Left</label>
+            <input type="range" id="topLeft" min="0" max="100" value="20" oninput="updateBorderRadius()">
+
+            <label>Top Right</label>
+            <input type="range" id="topRight" min="0" max="100" value="20" oninput="updateBorderRadius()">
+
+            <label>Bottom Right</label>
+            <input type="range" id="bottomRight" min="0" max="100" value="20" oninput="updateBorderRadius()">
+            
+            <label>Bottom Left</label>
+            <input type="range" id="bottomLeft" min="0" max="100" value="20" oninput="updateBorderRadius()">
+
+        </div>
+
+        <div class="output">
+            <p>CSS Border Radius:</p>
+            <code id="cssCode">border-radius: 20px 20px 20px 20px;</code>
+            <button class="copy-btn" onclick="copyCSS()">Copy CSS</button>
+            <button class="reset-btn" onclick="resetBorderRadius()">Reset</button>
+            <span id="copyMessage" class="copy-message"></span>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
