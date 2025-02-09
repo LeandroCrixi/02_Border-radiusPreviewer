@@ -38,6 +38,15 @@
             <span id="copyMessage" class="copy-message"></span>
         </div>
     </main>
+    <!-- Footer -->
+    <footer class="footer fade-in-delay">
+        <p>Leandro Crisci &copy; <span id="current-year"></span> Border Radius Previewer</p>
+    </footer>
+
+    <!-- Script to update the year dynamically -->
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
     <script src="./script.js"></script>
 </body>
 </html>
