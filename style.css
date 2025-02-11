@@ -128,3 +128,7 @@ header h1 {
     color: #d3d3e8;
     font-size: 0.9rem;
 }
+
+.footer a{
+    color: inherit;
+}
